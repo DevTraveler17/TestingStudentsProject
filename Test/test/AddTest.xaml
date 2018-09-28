@@ -1,0 +1,27 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Name="AddTestWindow" x:Class="test.AddTest"
+        Title="AddTest" Height="600" Width="800" Background="#FF1E2027" Closed="AddTestWindow_Closed">
+
+	<Grid>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition/>
+			<ColumnDefinition/>
+		</Grid.ColumnDefinitions>
+		<TextBlock HorizontalAlignment="Left" Margin="20,19,0,0" TextWrapping="Wrap" Text="Добавление теста" VerticalAlignment="Top" Foreground="White" FontSize="25"/>
+		<TextBlock HorizontalAlignment="Left" Margin="20,117,0,0" TextWrapping="Wrap" Text="Предмет" VerticalAlignment="Top" Foreground="White" FontSize="26.667"/>
+		<TextBlock HorizontalAlignment="Left" Margin="20,161.346,0,0" TextWrapping="Wrap" Text="Название" VerticalAlignment="Top" Foreground="White" FontSize="26.667"/>
+		<TextBox x:Name="SubjectText" HorizontalAlignment="Left" Margin="150,119,0,0" VerticalAlignment="Top" FontSize="26.667" Width="239" Background="#FF191B22" BorderThickness="0,1" Foreground="#FFAAAAAA" Padding="10,0,0,0"/>
+		<TextBox x:Name="TestNameText" HorizontalAlignment="Left" Margin="150,161,0,0" VerticalAlignment="Top" FontSize="26.667" Width="239" Background="#FF191B22" BorderThickness="0,1" Foreground="#FFAAAAAA" Padding="10,0,0,0"/>
+		<Button x:Name="Add_question_button" HorizontalAlignment="Left" Height="50" Margin="18,212,0,0" VerticalAlignment="Top" Width="371" FontSize="18" FontFamily="Segoe UI Light" Background="#FF664F4F" Foreground="White" BorderBrush="#FF595959" Content="Добавить вопрос" Click="Add_question_button_Click"/>
+		<TextBlock HorizontalAlignment="Left" Margin="10,17,0,0" TextWrapping="Wrap" Text="Обозреватель теста" VerticalAlignment="Top" Foreground="White" FontSize="25" Grid.Column="1" Width="376"/>
+		<Grid Grid.Column="1" HorizontalAlignment="Left" Height="519" Margin="0,50,0,0" VerticalAlignment="Top" Width="396">
+			<ScrollViewer x:Name="scrollViewer" HorizontalAlignment="Left" Height="519" VerticalAlignment="Top" Width="396" VerticalScrollBarVisibility="Hidden" PanningMode="VerticalOnly" RenderTransformOrigin="0,0">
+				<StackPanel x:Name="ExplorerText" Height="4" Width="396" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+			</ScrollViewer>
+		</Grid>
+		<Button x:Name="Generate_button" Content="Создать тест" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="371" FontSize="24" FontFamily="Segoe UI Light" Background="#FF46484F" Foreground="White" BorderBrush="#FF595959" Margin="18,267,0,0" Click="Generate_button_Click"/>
+
+	</Grid>
+</Window>

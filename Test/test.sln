@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "test", "test\test.csproj", "{CA1BB2F3-EC0D-413D-8675-6821FCB92C4A}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://alexeystrannik97.visualstudio.com/
+		SccProjectUniqueName0 = test\\test.csproj
+		SccProjectName0 = test
+		SccLocalPath0 = test
+		SccLocalPath1 = .
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CA1BB2F3-EC0D-413D-8675-6821FCB92C4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA1BB2F3-EC0D-413D-8675-6821FCB92C4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA1BB2F3-EC0D-413D-8675-6821FCB92C4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA1BB2F3-EC0D-413D-8675-6821FCB92C4A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

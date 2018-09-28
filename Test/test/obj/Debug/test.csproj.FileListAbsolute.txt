@@ -1,0 +1,2 @@
+C:\Projects\Client_app\Test\test\bin\Debug\test.exe.config
+C:\gitProjects\TestingStudentsProject\Test\test\bin\Debug\test.exe.config

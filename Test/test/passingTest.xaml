@@ -1,0 +1,36 @@
+﻿<Window
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d"
+	x:Class="test.passingTest"
+	x:Name="Window"
+	Title="passingTest"
+	Width="500" Height="450" Background="#FF1E2027" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded" Closed="Window_Closed">
+
+    <Grid>
+        <Grid x:Name="MainTestGrid">
+
+            <ScrollViewer x:Name="MainScroll" VerticalScrollBarVisibility="Hidden" Margin="0">
+
+                <StackPanel x:Name="LayoutRoot" Height="80" Margin="0" VerticalAlignment="Top" Width="490" >
+                    <Grid Height="50">
+                        <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="21.333" Foreground="White" Height="30" RenderTransformOrigin="0.486,0.5"><Run Text="Тема:"/></TextBlock>
+                        <TextBlock x:Name="ThemeText" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="21.333" Foreground="White" Width="200" Height="30" FontFamily="Segoe UI Light" Text="&lt;ThemeName&gt;" Margin="68,10,0,0"/>
+                    </Grid>
+                </StackPanel>
+            </ScrollViewer>
+        </Grid>
+        <Grid x:Name="RezultGrid" HorizontalAlignment="Left" Height="419" VerticalAlignment="Top" Width="492" d:IsHidden="True">
+            <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Общий результат" VerticalAlignment="Top" Height="34" Width="208" FontSize="24" Foreground="White"/>
+            <TextBlock HorizontalAlignment="Left" Margin="10,49,0,0" TextWrapping="Wrap" Text="Всего вопросов:" VerticalAlignment="Top" Height="28" Width="228" FontSize="20" Foreground="White"/>
+            <TextBlock HorizontalAlignment="Left" Margin="10,82,0,0" TextWrapping="Wrap" Text="Правильно решено:" VerticalAlignment="Top" Height="28" Width="228" FontSize="20" Foreground="White"/>
+            <TextBlock HorizontalAlignment="Left" Margin="10,115,0,0" TextWrapping="Wrap" Text="Процентов выполнено:" VerticalAlignment="Top" Height="28" Width="228" FontSize="20" Foreground="White"/>
+            <TextBlock x:Name="AllQuestionsText" HorizontalAlignment="Left" Margin="243,49,0,0" TextWrapping="Wrap" Text="&lt;AllQuestionsText&gt;" VerticalAlignment="Top" Height="28" Width="162" FontSize="20" Foreground="White"/>
+            <TextBlock x:Name="RightQuestionsText" HorizontalAlignment="Left" Margin="243,82,0,0" TextWrapping="Wrap" Text="&lt;RightQuestionsText&gt;" VerticalAlignment="Top" Height="28" Width="201" FontSize="20" Foreground="White"/>
+            <TextBlock x:Name="PercentText" HorizontalAlignment="Left" Margin="243,115,0,0" TextWrapping="Wrap" Text="&lt;PercentText&gt;" VerticalAlignment="Top" Height="28" Width="162" FontSize="20" Foreground="White"/>
+            <Button Content="Отправить данные" HorizontalAlignment="Left" Margin="10,202,0,0" VerticalAlignment="Top" Width="145" FontSize="14" Height="30" Background="#FF3C3E45" Foreground="#FFCDCDCD" Click="Button_Click"/>
+            <TextBlock HorizontalAlignment="Left" Margin="10,148,0,0" TextWrapping="Wrap" Text="Тест выполнен:" VerticalAlignment="Top" Height="28" Width="228" FontSize="20" Foreground="White"/>
+            <TextBlock x:Name="IsCopmleteText" HorizontalAlignment="Left" Margin="243,148,0,0" TextWrapping="Wrap" Text="&lt;Complete&gt;" VerticalAlignment="Top" Height="28" Width="143" FontSize="20" Foreground="White"/>
+        </Grid>
+    </Grid>
+</Window>
